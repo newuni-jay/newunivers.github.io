@@ -17,6 +17,10 @@
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="https://newunivers.com">
 
+    <!-- Font Awesome CDN for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
     <style>
         body {
             margin: 0;
@@ -54,6 +58,27 @@
         a:hover {
             text-decoration: underline;
         }
+        .social-icons {
+            display: flex;
+            gap: 15px; /* 아이콘 간의 간격 */
+            margin-top: 20px;
+        }
+        .social-icons a {
+            font-size: 11px; /* 아이콘 크기 줄이기 */
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .social-icons a i {
+            margin-right: 5px; /* 아이콘과 텍스트 간격 */
+        }
+        .social-icons span {
+            font-size: 8px; /* 텍스트 크기 줄이기 */
+            color: #333;
+        }
+        .social-icons a:hover {
+            color: #0073e6;
     </style>
 </head>
 <body>
@@ -65,5 +90,15 @@
 
     <!-- 메일 주소 -->
     <a href="mailto:contact@newunivers.com">Contact us: contact@newunivers.com</a>
+
+     <!-- 소셜 미디어 아이콘 -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/your_instagram_id" target="_blank">
+            <i class="fab fa-instagram"></i><span>newunivers_offical</span>
+        </a>
+        <a href="https://www.youtube.com/channel/your_youtube_channel" target="_blank">
+            <i class="fab fa-youtube"></i><span>NEWUNIVERS_official</span>
+        </a>
+    </div>
 </body>
 </html>
